@@ -46,13 +46,14 @@ Example `input.json`:
 
 ```json
 {
+  "config": {}, // for configuration purposes
   "Programming": {
     "C++": {
-      "Basics": "https://example.com/cpp-basics",
-      "OOP": "https://example.com/cpp-oop"
+      "Basics.pdf": "https://example.com/cpp-basics",
+      "OOP.pdf": "https://example.com/cpp-oop"
     }
   },
-  "Articles": "https://example.com/articles"
+  "Articles.pdf": "https://example.com/articles"
 }
 ```
 
@@ -74,19 +75,6 @@ node script.js --mode d "https://example.com/article" "output/docs/article.pdf"
 
 ```bash
 node script.js --help
-```
-
-## Configuration
-
-While primarily a general-purpose tool, the JSON file supports a configuration placeholder:
-
-```json
-{
-  "config": {},
-  "Content": {
-    "Tutorials": "https://example.com/tutorials"
-  }
-}
 ```
 
 ## Error Handling

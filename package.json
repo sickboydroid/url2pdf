@@ -10,7 +10,6 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "p-limit": "^6.2.0",
     "puppeteer": "^24.8.1"
   }
 }
